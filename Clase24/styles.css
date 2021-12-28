@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.card {
+    max-width: 300px;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: #EDD74D;
+}
+
+.card h2 {
+    text-transform: uppercase;
+}
+
+hr {
+    margin: 25px 0;
+}
+
+.skeleton {
+    background-color: grey;
+    animation: parpadear 1.5s infinite;
+    /* animation-direction: alternate; */
+}
+
+.skeleton h2 {
+    background-color: rgb(83, 83, 83);
+    color: rgb(83, 83, 83);
+}
+
+.skeleton img {
+    max-width: 50%;
+}
+
+form {
+    text-align: center;
+}
+
+@keyframes parpadear {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(60deg);
+    }
+    20% {
+        transform: rotate(120deg);
+    }
+    40% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(240deg);
+    }
+    80% {
+        transform: rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

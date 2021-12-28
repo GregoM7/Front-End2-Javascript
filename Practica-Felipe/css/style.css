@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root {
+    --primary-color: #00669F;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 100;
+background-color: var(--primary-color); 
+padding: 10px 0px;
+}
+
+/**!---------------MODO OSCURO-----------*/
+
+button {
+    position: fixed;
+    left: 0;
+    top: calc(50% - 90px);
+    z-index: 200;
+}
+button {
+    padding: 10px 15px;
+    transition: all 500ms ease;
+    font-size: 25px;
+    background-color: rgb(211, 211, 226);
+}
+
+.dark{
+    background-color: black;
+}
+.dark h2{
+    color: aliceblue;
+}
+.dark p{
+    color: aliceblue;
+}
+
+/*! CARDS*/
+.cards{
+    width: 30%;
+}
+.cards img{
+    width: 100%;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+p{
+    margin-top: 10px;
+    
+}
+
+footer{
+    text-align: center;
+    margin-top: 40px;
+}
+
+input{
+     width: 40%;
+     height: 30px;
+}
+input::placeholder{
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+
+h1 {
+    color: red;
+}
